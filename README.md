@@ -47,7 +47,7 @@ To ensure that variations of the same video do not appear in both the training a
 ## Model Architecture
 The model consists of two parallel input streams:
 1. **Frame Input**: Each frame is resized to 64x64 pixels and normalized.
-2. **Objects Input**: Object vectors of length 80 are generated for each frame based on the COCO dataset's object detection.
+2. **Objects Input**: Based on YOLOv3 object detection pre-trained with COCO dataset, object vectors of length 80 are generated for each frame.
    
 The extracted features from the convolutional network are passed into an LSTM to capture the temporal information across video frames. The final output predicts the action class for each video.
 
