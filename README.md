@@ -9,7 +9,7 @@ This repository contains the implementation of an **LRCN model** (Long-term Recu
 - [Data Augmentation](#data-augmentation)
 - [Key Frame Selection Method](#key-frame-selection-method)
 - [Metrics and Results](#metrics-and-results)
-- [Project Workflow](#project-worklow)
+- [Project Workflow](#project-workflow)
 - [References](#references)
 
 ## Overview
@@ -264,7 +264,7 @@ This approach ensures that selected frames capture significant actions and movem
 | ![YouTubeKeyFrame_ConfusionMatrix_Accuracy_0.8809523582458496_Loss_1.0962570905685425](https://github.com/user-attachments/assets/35d4b7a7-ea51-4180-b4e7-e58ef8d7d0c6) | ![YouTube_ConfusionMatrix_Accuracy_0.7976190447807312_Loss_1.2761812210083008](https://github.com/user-attachments/assets/28255850-0dcf-45f3-9b64-ebbf20533bbb) |
 
 
-### Project Workflow
+## Project Workflow
 
 1. **Small Dataset (e.g. from YouTube) Creation**:
    A small dataset is created by collecting relevant videos from YouTube corresponding to the action classes of interest.
@@ -288,7 +288,7 @@ This approach ensures that selected frames capture significant actions and movem
    Finally, the `run` script is executed to train the model using the prepared dataset and features.
    
 
-### References
+## References
 
 1. **UCF-101 Dataset**: 
    K. Soomro, A. R. Zamir, and M. Shah. "UCF101: A Dataset of 101 Human Actions Classes From Videos in the Wild." *arXiv preprint arXiv:1212.0402* (2012). [Link to UCF101](https://www.crcv.ucf.edu/data/UCF101.php)
