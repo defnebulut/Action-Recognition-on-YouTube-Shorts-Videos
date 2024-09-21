@@ -40,9 +40,11 @@ We applied the following augmentation techniques:
  After data augmentation, the dataset sizes are:
 - **Training Set**: 807 videos (2,421 augmented examples)
 - **Test Set**: 333 videos (999 augmented examples)
-- **YouTube Data**: 84 videos (each with extracted features and object vectors)
+
 
 To ensure that variations of the same video do not appear in both the training and validation sets, we utilized the [UCF101 Train-Test Split Downloader](https://github.com/rocksyne/UCF101-train-test-split-downloader). This tool helps in downloading the dataset while maintaining the integrity of the train-test split.
+
+- **YouTube Data**: 84 videos (each class has 10 or 11 videos)
 
 ## Model Architecture
 The model consists of two parallel input streams:
