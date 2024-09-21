@@ -276,7 +276,7 @@ This approach ensures that selected frames capture significant actions and movem
    The script `extract_frames_better_class_level` is executed to extract key frames from the downloaded videos. This can be done either by downloading video-level data or directly at the dataset level.
 
 4. **Train-Test Split**:
-   Using the UCF101 Train-Test Split Downloader's text files, containing paths of the relevant videos, train-test split scripts generate the necessary text files for the dataset.
+   Using the  [UCF101 Train-Test Split Downloader](https://github.com/rocksyne/UCF101-train-test-split-downloader)'s text files, containing paths of the relevant videos, train-test split scripts generate the necessary text files for the dataset.
 
 5. **Dataset Creation**:
    The `create_dataset_` scripts are run to create datasets based on the generated text files or dataset origins.
