@@ -266,25 +266,28 @@ This approach ensures that selected frames capture significant actions and movem
 
 ## Project Workflow
 
-1. **Small Dataset (e.g. from YouTube) Creation**:
+1. **Configuration**:
+   Modifying the `config` file optionally.
+
+2. **Small Dataset (e.g. from YouTube) Creation**:
    A small dataset is created by collecting relevant videos from YouTube corresponding to the action classes of interest.
 
-2. **Frame Extraction**:
-   The script `extract_frames_better_class_level` is executed to extract frames from the downloaded videos. This can be done either by downloading video-level data or directly at the dataset level.
+3. **Key Frame Extraction**:
+   The script `extract_frames_better_class_level` is executed to extract key frames from the downloaded videos. This can be done either by downloading video-level data or directly at the dataset level.
 
-3. **Train-Test Split**:
+4. **Train-Test Split**:
    Using the UCF101 Train-Test Split Downloader's text files, containing paths of the relevant videos, train-test split scripts generate the necessary text files for the dataset.
 
-4. **Dataset Creation**:
+5. **Dataset Creation**:
    The `create_dataset_` scripts are run to create datasets based on the generated text files or dataset origins.
 
-5. **Object Detection**:
+6. **Object Detection**:
    The scripts in the yolo folder, specifically `class_and_count_`, are executed to extract object information from the relevant frames. This includes counting the number of detected objects and writing the results to text files.
 
-6. **Conversion to PKL**:
+7. **Conversion to PKL**:
    The `object_to_pkl` script is run to convert the data from the text files into PKL (Pickle) format for easier handling during model training.
 
-7. **Model Training**:
+8. **Model Training**:
    Finally, the `run` script is executed to train the model using the prepared dataset and features.
    
 
