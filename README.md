@@ -9,6 +9,7 @@ This repository contains the implementation of an **LRCN model** (Long-term Recu
 - [Data Augmentation](#data-augmentation)
 - [Key Frame Selection Method](#key-frame-selection-method)
 - [Metrics and Results](#metrics-and-results)
+- [Project Workflow](#project-worklow)
 - [References](#references)
 
 ## Overview
@@ -262,6 +263,30 @@ This approach ensures that selected frames capture significant actions and movem
 |--------------------------------------|---------------------------------------------|
 | ![YouTubeKeyFrame_ConfusionMatrix_Accuracy_0.8809523582458496_Loss_1.0962570905685425](https://github.com/user-attachments/assets/35d4b7a7-ea51-4180-b4e7-e58ef8d7d0c6) | ![YouTube_ConfusionMatrix_Accuracy_0.7976190447807312_Loss_1.2761812210083008](https://github.com/user-attachments/assets/28255850-0dcf-45f3-9b64-ebbf20533bbb) |
 
+
+### Project Workflow
+
+1. **Small Dataset (e.g. from YouTube) Creation**:
+   A small dataset is created by collecting relevant videos from YouTube corresponding to the action classes of interest.
+
+2. **Frame Extraction**:
+   The script `extract_frames_better_class_level` is executed to extract frames from the downloaded videos. This can be done either by downloading video-level data or directly at the dataset level.
+
+3. **Train-Test Split**:
+   Using the UCF101 Train-Test Split Downloader's text files, containing paths of the relevant videos, train-test split scripts generate the necessary text files for the dataset.
+
+4. **Dataset Creation**:
+   The `create_dataset_` scripts are run to create datasets based on the generated text files or dataset origins.
+
+5. **Object Detection**:
+   The scripts in the yolo folder, specifically `class_and_count_`, are executed to extract object information from the relevant frames. This includes counting the number of detected objects and writing the results to text files.
+
+6. **Conversion to PKL**:
+   The `object_to_pkl` script is run to convert the data from the text files into PKL (Pickle) format for easier handling during model training.
+
+7. **Model Training**:
+   Finally, the `run` script is executed to train the model using the prepared dataset and features.
+   
 
 ### References
 
