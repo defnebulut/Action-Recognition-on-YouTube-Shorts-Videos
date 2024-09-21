@@ -1,0 +1,20 @@
+Accuracy: 0.8810
+Precision: 0.8989
+Recall: 0.8810
+F1 Score: 0.8797
+
+Classification Report:
+                precision    recall  f1-score   support
+
+ApplyEyeMakeup       0.73      0.80      0.76        10
+BasketballDunk       1.00      1.00      1.00        11
+        Diving       0.77      1.00      0.87        10
+    IceDancing       0.90      0.82      0.86        11
+   HorseRiding       0.79      1.00      0.88        11
+ PlayingGuitar       1.00      0.70      0.82        10
+BlowingCandles       1.00      1.00      1.00        11
+WalkingWithDog       1.00      0.70      0.82        10
+
+      accuracy                           0.88        84
+     macro avg       0.90      0.88      0.88        84
+  weighted avg       0.90      0.88      0.88        84
