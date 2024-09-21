@@ -9,7 +9,7 @@ This repository contains the implementation of an **LRCN model** (Long-term Recu
 - [Data Augmentation](#data-augmentation)
 - [Key Frame Selection Method](#key-frame-selection-method)
 - [Metrics and Results](#metrics-and-results)
-- [References](https://github.com/defnebulut/editor.md "references")
+- [References](#references)
 
 ## Overview
 
