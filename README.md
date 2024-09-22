@@ -4,7 +4,7 @@ This repository contains the implementation of an **LRCN model** (Long-term Recu
 
 
 
-### Example Results from UCF-101 Dataset
+### Example Results on UCF-101 Dataset
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1689a78b-cb25-4524-b210-d7ba55a99043" width="45%" alt="First image" />
   &nbsp; &nbsp; &nbsp; &nbsp;
