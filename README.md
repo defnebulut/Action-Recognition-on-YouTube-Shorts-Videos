@@ -83,6 +83,9 @@ This approach ensures that selected frames capture significant actions and movem
 
 ## Metrics and Results
 
+These metrics show the model's performance on YouTube Shorts videos, which consists of 84 sample videos.
+
+
 <table>
   <tr>
     <td>
