@@ -1,6 +1,6 @@
 # Action-Recognition-on-YouTube-Shorts-Videos
 
-This repository contains the implementation of an **LRCN model** (Long-term Recurrent Convolutional Network) for action recognition using the **UCF-101 dataset** and **YouTube videos**. The project applies a **key frame selection technique** based on optical flow and feature extraction to enhance model performance, especially on YouTube videos. This implementation is part of the research project titled "Automatic Audio Description Generation for YouTube Videos by Artificial Intelligence" supported by TUBITAK 2209-A.
+This repository contains the implementation of an **LRCN model** (Long-term Recurrent Convolutional Network) for action recognition using the **UCF-101 dataset** and **YouTube videos**. The project applies a **key frame selection technique** based on optical flow and feature extraction to enhance model performance, especially on YouTube videos. This implementation is part of the research project titled "Automatic Audio Description Generation for YouTube Videos by Artificial Intelligence" supported under TUBITAK 2209-A.
 
 
 
